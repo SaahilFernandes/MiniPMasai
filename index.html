@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Finder</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Movie Finder</h1>
+        <form class="search-form" id="search-form">
+            <input 
+                id="search-input"
+                type="search" 
+                placeholder="Search for movies by title..." 
+                aria-label="Search movies"
+            />
+        </form>
+    </header>
+
+    <main class="main-container">
+        <!-- Results Section -->
+        <section class="results-section">
+            <h2 id="results-heading">Popular Movies</h2>
+            <div id="status-container" class="status-message"></div>
+            <div id="results-grid" class="movie-grid">
+                <!-- Movie cards will be rendered here -->
+            </div>
+        </section>
+
+        <!-- Favorites Section -->
+        <aside class="favorites-section">
+            <h2>My Favorites</h2>
+            <div id="favorites-grid" class="movie-grid">
+                <!-- Favorite movie cards will be rendered here -->
+            </div>
+        </aside>
+    </main>
+
+    <!-- JS Module -->
+    <script type="module" src="./src/app.js"></script>
+</body>
+</html>
